@@ -20,6 +20,8 @@ Example:
 ```python
 people_data = session.get_people(name="Kevin", types="investor", max_thread_num=5)
 ```
+### Test
+The ```RAPIDAPI_KEY``` should be changed to your own Rapidapi key at the top of the codes before you run the test.py.
 
 ## Installation
 Install cbapi using pip:
