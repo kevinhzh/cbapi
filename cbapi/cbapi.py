@@ -39,7 +39,7 @@ class Crunchbase():
 
         temp_query_string = query_string.copy()
         for page in page_list:
-            temp_query_string["page"] = page
+            temp_query_string["page"] = str(page)
             response = requests.request("GET", url, headers=headers, params=temp_query_string)
             if (200 == response.status_code):
                 api_response = json.loads(response.text)
